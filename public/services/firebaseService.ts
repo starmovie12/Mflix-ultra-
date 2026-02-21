@@ -1,4 +1,21 @@
-import { Movie } from '../types';
+// 'import { Movie } from "../types";' को हटा दिया गया है ताकि path का error ना आए।
+
+// Movie टाइप को यहीं डिफाइन कर दिया गया है
+export interface Movie {
+  movie_id: string;
+  title: string;
+  video_url: string;
+  quality_name?: string;
+  poster?: string;
+  rating?: string;
+  year?: string;
+  genre?: string;
+  short_description?: string;
+  director?: string;
+  cast?: string;
+  industry?: string;
+  runtime?: string;
+}
 
 const BASE_URL = "https://bhaag-df531-default-rtdb.firebaseio.com";
 
